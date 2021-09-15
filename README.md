@@ -3,7 +3,7 @@
 
 *Array of coefficients can be calculated here -> [https://www.arc.id.au/FilterDesign.html]
 
-*Copy the generated coefficients into the code
+*pass the generated coefficients array to the object constructor
 
 *Uses circular buffers for enhanced speed
 
