@@ -18,7 +18,6 @@ float FIR_filter::filter_value(float new_sample)
     {
         output += filter_coefficients[coeff_index] * circular_buffer[sample_index];
         (sample_index == 0) ? sample_index = FILTER_SIZE - 1 : sample_index--;
-
     }
 
     (oldest_sample + 1) == FILTER_SIZE ? oldest_sample = 0 : oldest_sample++;
