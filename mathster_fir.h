@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 class FIR_filter
 {
     public:
@@ -5,7 +7,7 @@ class FIR_filter
         float filter_value(float new_sample);
 
     private:
-        float filter_coefficients[100];
+        float *filter_coefficients;//[100];
         float circular_buffer[100];
         int FILTER_SIZE;
         int oldest_sample = 0;
